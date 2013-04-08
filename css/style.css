@@ -1,0 +1,227 @@
+/* START styles all elements ---------------------------------------------------------------------------------------- */
+
+* { margin: 0; padding: 0; outline: 0; }
+
+/* END styles all elements ---------------------------------------------------------------------------------------- */
+
+
+/* START CSS3 elements styles ---------------------------------------------------------------------------------------- */
+
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+
+
+body { font-family: Verdana, Arial, Sans-serif; color: #4b4b4b; background: url(../images/css/pattern.gif); text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
+
+::selection { background-color: rgba(122, 192, 0, 0.2); }
+::-moz-selection { background-color: rgba(122, 192, 0, 0.2); border: 10px solid red; }
+
+h1 { color: #fff; font-size: 40px; position: relative; top: 15px; }
+h1 a { color: #fff; font-size: 40px; background-color: #52B5DF; padding: 5px 25px 10px 25px; 
+       width: 300px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+       -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); border-bottom: 1px solid rgba(0, 0, 0, 0.4); border-top: 1px solid rgba(255, 255, 255, 0.6);
+  	   background: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.23, #3d87a7),
+	    color-stop(0.62, #52B5DF)
+	);
+	background: -moz-linear-gradient(
+	    center bottom,
+	    #3d87a7 23%,
+	    #52B5DF 62%
+	);
+}
+
+h1 a:hover { color: #fff; border-bottom: 1px solid rgba(0, 0, 0, 0.4); padding-bottom: 10px; background-color: #7ac000;
+	background: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0.23, #dbe493),
+	    color-stop(0.62, #b6c827)
+	);
+	background: -moz-linear-gradient(
+	    center bottom,
+	    #dbe493 23%,
+	    #b6c827 62%
+	);
+}
+
+h2 { padding-left: 125px; font-size: 60px; color: #0098D0; height: 105px; }
+h2 span.sub { font-size: 48px; float: left; color: #4b4b4b; }
+
+h2.intro { background: url(../images/css/intro.png) no-repeat -10px -10px; }
+h2.work { background: url(../images/css/portfolio.png) no-repeat -10px -10px; }
+h2.about { background: url(../images/css/about.png) no-repeat -10px -10px; }
+h2.contact { background: url(../images/css/contact.png) no-repeat -10px -10px; }
+h2.about { background: url(../images/about.png) no-repeat -10px -10px; }
+h2.sponsors { background: url(../images/css/sponsor.png) no-repeat -10px -10px; }
+h2.trainees { background: url(../images/css/earth.png) no-repeat -10px -10px; }
+
+h3 {padding-left: 125px; font-size: 30px; color: #0098D0; height: 105px; }
+h3.about { background: url(../images/css/AVJ_h3.jpg) no-repeat 20px -10px; }
+
+h4 {padding-left: 20px; font-size: 25px; color: #0098D0; height: 40px; }
+
+a { color: #003399; text-decoration: none; /*border-bottom: 1px solid #003399;*/ padding-bottom: 2px; }
+a:hover { color: #868ABA; text-decoration: none; /*border-bottom: 1px solid #003399;*/ padding-bottom: 2px; }
+a:active { color: #868ABA; text-decoration: none; /*border-bottom: 1px solid #003399;*/ padding-bottom: 2px; position: relative; top: 1px; }
+
+a.navAnchor  { color: #0098D0; text-decoration: none; padding-bottom: 2px;  }
+/*a:hover.navAnchor { color: #ffffff; text-decoration: none; border-bottom: none; padding-bottom: 2px; }*/
+a:hover.navAnchor { background-color:#fff; -moz-border-radius:25px;-webkit-border-radius:5px;border-radius:4px;}
+a:active.navAnchor  { color: #0098D0; text-decoration: none; border-bottom: none; padding-bottom: 2px; position: relative; top: 1px; }
+
+img { border-style:none; }
+
+p { font-size: 18px; margin-bottom: 15px; line-height: 36px; text-align:justify; }
+strong { font-family: Verdana, Arial, Sans-serif; }
+
+ul.list
+{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+ul.list li
+{
+background-image: url(../images/css/arrow.png);
+background-repeat: no-repeat;
+/*background-position: 0px 5px; 
+padding-left: 14px; */
+margin: 0px; 
+padding-left: 25px; 
+padding-bottom: 10px;
+}
+
+ul.contact
+{
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+
+ul.contact li
+{
+padding: 5px;
+margin: 0px;    
+}
+
+header { padding: 5px 0; width: 100%; background-color: #000; margin-bottom: 25px; -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); position: fixed; z-index: 10; float: left; }
+#headercontainer  { width: 1008px; margin: 0 auto; position: relative; }
+#footercontainer  { width: 1008px; margin: 0 auto; position: relative; }
+/*#contentcontainer { width: 960px; margin: 0 auto; position: relative; float: none; padding-top: 0px; }*/
+#contentcontainer { width: 1008px; margin: 0 auto; position: relative; float: none;  padding-top: 0px;}
+
+nav { width: auto; float: right; padding-left:35%;}
+nav ul { position: relative; right: 0; display: block; margin-top: -37px;}
+nav ul li { display: inline; margin-left: 25px; }
+nav ul li a { font-size: 20px; border-bottom: none; }
+
+section { margin-bottom: auto; padding-top: 120px; float: left; }
+hr {
+  border: none;
+  border-top: 2px solid #6e6e6e;
+  margin-top: 64px;
+  /*margin-bottom: 32px;*/
+}
+
+#intro h2 a { padding-bottom: 0px; }
+#intro a.featured { padding-bottom: 0px; border-bottom: none; }
+#intro a img { border: 5px solid rgba(122, 192, 0, 0.15); -webkit-border-radius: 5px; margin-top: 40px; margin-bottom: 5px; }
+#intro a img:hover, #portfolio .work a img:hover, input:hover, textarea:hover { border: 5px solid rgba(122, 192, 0, 1); -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); }
+#intro a img:active, #portfolio .work a img:active { -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); }
+
+#images_about { margin-left:auto; margin-right:auto; width:100%;}
+
+footer { position: relative; clear: both; width: 100%; bottom: 0; border: none; padding: 13px 0 0 325px; text-align: justify; color: #003399; background: #fff;}
+/*footer ul { margin-bottom: 150px; }*/
+footer ul { margin-bottom: 25px; }
+footer ul li { display: inline; margin-right: 50px; }
+footer ul li a { font-size: 24px; margin-left: 10px; }
+footer ul li img { vertical-align: bottom; position: relative; top: 2px; }
+
+/* END CSS3 elements styles ---------------------------------------------------------------------------------------- */
+
+/* START AIESEC IPN btn ---------------------------------------------------------------------------------------- */
+
+#bt_lc_logo {
+
+position: fixed; background: #fff; padding: 5px 2px 2px 5px;
+
+right: 0; top: 210px; width: 91px; height: 40px; z-index: 2;
+
+/* CSS3 Rounded Corners */
+
+-moz-border-radius:6px;
+
+-webkit-border-radius:6px;
+
+border-radius:6px;	
+
+/* CSS3 Box Shadow */
+
+-moz-box-shadow:0 0 5px #ccc;
+
+-webkit-box-shadow:0 0 5px #ccc;
+
+box-shadow:0 0 5px #ccc;}
+
+/* END AIESEC IPN btn ---------------------------------------------------------------------------------------- */
+
+/* START ICONOS REDES SOCIALES ---------------------------------------------------------------------------------------- */
+
+#socialIcons {
+position: fixed; background: #fff; padding: 5px 0 4px 2px;
+right: 0; top: 280px; width: 40px; z-index: 2;
+
+/* CSS3 Rounded Corners */
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+border-radius:6px;
+	
+/* CSS3 Box Shadow */
+-moz-box-shadow:0 0 5px #ccc;
+-webkit-box-shadow:0 0 5px #ccc;
+box-shadow:0 0 5px #ccc;}
+#socialIcons img {display: block; margin: 0 auto 2px auto; }
+
+/* END ICONOS REDES SOCIALES ---------------------------------------------------------------------------------------- */
+
+/* START Feedback btn --------------------------------------------------------------------------------------- */
+
+#bt_feedback {
+
+position: fixed; background: #fff; padding: 2px 2px 0 0;
+
+left: 0; top: 210px; width: auto; z-index: 2; 
+
+}
+/* END Feedback btn ---------------------------------------------------------------------------------------- */
+
+
+/* START Flag btn --------------------------------------------------------------------------------------- */
+
+#bt_flag {
+
+position: fixed; background: #fff; padding: 5px 0 4px 2px;
+
+right: 0; top: 400px; width: auto; z-index: 2; 
+
+/* CSS3 Rounded Corners */
+-moz-border-radius:6px;
+-webkit-border-radius:6px;
+border-radius:6px;
+	
+/* CSS3 Box Shadow */
+-moz-box-shadow:0 0 5px #ccc;
+-webkit-box-shadow:0 0 5px #ccc;
+box-shadow:0 0 5px #ccc;}
+
+}
+/* END Feedback btn ---------------------------------------------------------------------------------------- */
